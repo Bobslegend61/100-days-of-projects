@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Fredoka", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+p {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+/* variables */
+:root {
+  --primary-color: #161616;
+  --primary-contrast: #ffffff;
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--primary-contrast);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.wrapper {
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--primary-contrast);
+}
+.highscore {
+  font-weight: bold;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #919191;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  margin: auto 5px;
+  min-width: 95%;
+}
+
+.content > p {
+  margin: 4px 0;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.buttons span {
+  margin: 0 15px;
+  font-size: 0.8rem;
+}
+
+.buttons .button {
+  font-size: 0.5rem;
+}
+
+.buttons .button:disabled {
+  opacity: 0.4;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: var(--primary-color);
+  background-color: var(--primary-contrast);
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.selected {
+  color: var(--primary-contrast);
+  background-color: var(--primary-color);
+}
+
+.option span {
+  font-size: 0.8rem;
+}
+.option > p {
+  flex-grow: 1;
+  margin-left: 10px;
+}
