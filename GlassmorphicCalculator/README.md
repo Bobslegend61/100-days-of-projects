@@ -1,3 +1,3 @@
 # GlassmorphicCalculator
 
-[Check it out](https://eager-cori-65706a.netlify.app/)
+[Check it out](https://hungry-fermi-6ef987.netlify.app)
