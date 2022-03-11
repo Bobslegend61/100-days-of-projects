@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(rgb(82, 204, 252), rgb(0, 111, 185));
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.calculator {
+  max-width: 400px;
+  padding: 15px 10px;
+}
+
+.calculator__screen {
+  height: 60px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  padding: 5px;
+  background-color: transparent;
+  /* overflow-x: scroll; */
+
+  box-shadow: 0 1px 2px 0 rgba(31, 38, 135, 0.27);
+}
+
+.calculator__screen span.divide {
+  margin: 0 10px;
+}
+
+.calculator__buttons {
+  margin-top: 10px;
+  padding: 5px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.calculator__buttons--button {
+  padding: 13px 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 50ms;
+
+  box-shadow: 0 1px 2px 0 rgba(31, 38, 135, 0.27);
+  background-color: transparent;
+}
+
+.calculator__buttons--button:hover {
+  box-shadow: none;
+}
+
+.calculator__buttons--button[data-value="0"] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.calculator__buttons--button[data-value="AC"],
+.calculator__buttons--button[data-value="MC"],
+.calculator__buttons--button[data-value="%"] {
+  opacity: 0.7;
+}
